@@ -32,6 +32,16 @@ ll extend_gcd(ll a,ll b,ll &x,ll &y)
     return ans;
 }
 
+ll modInverse(ll a,ll m)
+{
+  ll x,y;
+  ll g=extend_gcd(a,m,x,y);
+
+  ll res=(x%m + m)%m;
+
+  return res;
+}
+
 ll combination(ll n,ll r)
 {
     if(n==r || r==0) return 1;
