@@ -1,4 +1,4 @@
-///Hihocode 1014 - Trie Tree
+///Hihocoder 1014 - Trie Tree
 
 //Given n number of string and m number of preffix ,count number of preffix matched with given n number of string.
 
