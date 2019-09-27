@@ -74,6 +74,22 @@ ll modInverse(ll a, ll m)
     return res;
 }
 
+int phi(int n) {     ///Euler Totient Function
+	int result = n;
+	ll sum = 1;
+	for (int i = 2; i * i <= n; i++) {
+		if (n % i == 0) {
+			while (n % i == 0) {
+				n /= i;
+			}
+			result -= result / i;
+		}
+	}
+	if (n > 1)
+		result -= result / n;
+	return result;
+}
+
 ll bigmod(ll a, ll b, ll m)
 {
     if (b == 0 )return 1;
