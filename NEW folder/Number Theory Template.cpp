@@ -48,6 +48,33 @@ vector<int> Prime_factor(int x) ///Prime Factorization
     return ans;
 }
 
+vector<ll> factorize(long long n)  ///Prime Factor of a number upto 1e12
+{
+	vector<ll>v;
+	int count = 0;
+	while (!(n % 2)) {
+		n >>= 1;
+		count++;
+	}
+	if (count)
+		v.pb(2LL);
+
+	for (ll i = 3; i <= sqrt(n); i += 2) {
+		count = 0;
+		while (n % i == 0) {
+			count++;
+			n = n / i;
+		}
+		if (count)
+			v.pb(i);
+	}
+
+	if (n > 2)
+		v.pb(n);
+
+	return v;
+}
+
 ll extend_gcd(ll a, ll b, ll &x, ll &y)
 {
     if (b == 0)
