@@ -1,4 +1,4 @@
-///Find the longest palindrome inside a string
+///Find the longest palindromic substring inside a string
 ///cses.fi longest palindrome
 #include<bits/stdc++.h>
 #define ll long long
