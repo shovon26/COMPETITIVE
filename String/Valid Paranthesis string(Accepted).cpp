@@ -1,3 +1,8 @@
+/*Problem link:
+https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/530/week-3/3301/
+Problem name:Valid Parenthesis String
+*/
+
 #include<bits/stdc++.h>
 #define ll long long int
 #define ss second
