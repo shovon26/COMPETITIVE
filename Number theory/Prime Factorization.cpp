@@ -1,14 +1,14 @@
-int prime[MX+10];
+int prime[nax+10];
 void sieve()
 {
     prime[0] = prime[1] = 1;
-    for (int i = 2; i <= MX; i++) prime[i] = i;
-    for (int i = 4; i <= MX; i += 2)prime[i] = 2;
+    for (int i = 2; i <= nax; i++) prime[i] = i;
+    for (int i = 4; i <= nax; i += 2)prime[i] = 2;
 
-    for (int i = 3; i * i <= MX; i += 2)
+    for (int i = 3; i * i <= nax; i += 2)
     {
         if (prime[i] == i) {
-            for (int j = i * i; j <= MX; j += i) {
+            for (int j = i * i; j <= nax; j += i) {
                 if (prime[j] == j)
                     prime[j] = i;
             }
